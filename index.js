@@ -47,13 +47,6 @@ if (NODE_ENV === "development") {
 
 
 // routes middlewares
-
-
-app.use(authRoutes);
-app.use(userRouter);
-app.use(eventRouter);
-
-
 app.get("/", (req, res) => {
   res.status(200).json({
     type: "success",
@@ -61,6 +54,13 @@ app.get("/", (req, res) => {
     data: null,
   });
 });
+
+app.use(authRoutes);
+app.use(userRouter);
+app.use(eventRouter);
+
+
+
 
 // page not found error handling  middleware
 app.use("*", (req, res, next) => {
