@@ -17,7 +17,7 @@ const eventRouter = require("./routes/event.route");
 const app = express();
 app.use(express.json());
 
-app.get("/firs", (req, res) => {
+app.get("/first", (req, res) => {
   res.status(200).json({
     type: "success",
     message: "server is up and running",
