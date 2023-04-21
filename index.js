@@ -87,7 +87,7 @@ app.use((err, req, res, next) => {
 async function main() {
   try {
     mongoose.set("strictQuery", false);
-    await mongoose.connect("mongodb+srv://tanmayyadav21:tanmayyadav21@cluster0.tnszck1.mongodb.net/?retryWrites=true&w=majority", {
+    await mongoose.connect("mongodb+srv://yadavtanmay852:tanmayyadav@cluster0.khreuom.mongodb.net/?retryWrites=true&w=majority", {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
