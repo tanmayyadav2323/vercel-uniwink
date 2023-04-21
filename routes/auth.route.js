@@ -50,7 +50,7 @@ authRouter.post("/api/authenticatePhone", async (req, res, next) => {
       await user.save();
       await fast2sms(
         {
-          message: `${otp} M0e96X5HU3A`,
+          message: `${otp} o+304LwG+kd`,
           contactNumber: user.phone,
         },
         next
@@ -80,7 +80,7 @@ authRouter.post("/api/authenticatePhone", async (req, res, next) => {
       await user.save();
       await fast2sms(
         {
-          message: `${otp} M0e96X5HU3A`,
+          message: `${otp} o+304LwG+kd`,
           contactNumber: user.phone,
         },
         next

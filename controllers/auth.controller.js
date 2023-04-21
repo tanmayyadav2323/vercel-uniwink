@@ -54,7 +54,7 @@ exports.createNewUser = async (req, res, next) => {
     // send otp to phone number
     await fast2sms(
       {
-        message: `${otp} M0e96X5HU3A`,
+        message: `${otp} o+304LwG+kd`,
         contactNumber: user.phone,
       },
       next
@@ -96,7 +96,7 @@ exports.loginWithPhoneOtp = async (req, res, next) => {
     // send otp to phone number
     await fast2sms(
       {
-        message: `${otp} M0e96X5HU3A`,
+        message: `${otp} o+304LwG+kd`,
         contactNumber: user.phone,
       },
       next
