@@ -1,6 +1,8 @@
 const fast2sms = require("fast-two-sms");
 // const {FAST2SMS} = require("../config");
 
+const FAST2SMS = KQFRHOwfoRBg2PeBgwnGcLfIXRKNMjRAgDmu2pJ2VzIq7GUYFr7LZiotjlaL;
+
 exports.generateOTP = (otp_length) => {
   // Declare a digits variable
   // which stores all digits
@@ -15,7 +17,7 @@ exports.generateOTP = (otp_length) => {
 exports.fast2sms = async ({ message, contactNumber }, next) => {
   try {  
     const res = await fast2sms.sendMessage({
-      authorization: KQFRHOwfoRBg2PeBgwnGcLfIXRKNMjRAgDmu2pJ2VzIq7GUYFr7LZiotjlaL,
+      authorization: FAST2SMS,
       message,
       numbers: [contactNumber],
     });
